@@ -562,21 +562,21 @@ export default function Page() {
                 <div className="card" style={{ padding: 16 }}>
                   <h3>Single Vision</h3>
                   <div className="choices">
-                    {plan.quick.sv.best ? <Choice label="Best" value={plan.quick.sv.best} tone="best" /> : null}
-                    {plan.quick.sv.good ? <Choice label="Good" value={plan.quick.sv.good} tone="good" /> : null}
-                    {plan.quick.sv.transitions ? <Choice label="Transitions" value={plan.quick.sv.transitions} tone="warn" /> : null}
-                    {plan.quick.sv.sunglasses ? <Choice label="Sunglasses" value={plan.quick.sv.sunglasses} /> : null}
+                    {(plan.quick.sv as any).best ? <Choice label="Best" value={(plan.quick.sv as any).best} tone="best" /> : null}
+                    {(plan.quick.sv as any).good ? <Choice label="Good" value={(plan.quick.sv as any).good} tone="good" /> : null}
+                    {(plan.quick.sv as any).transitions ? <Choice label="Transitions" value={(plan.quick.sv as any).transitions} tone="warn" /> : null}
+                    {(plan.quick.sv as any).sunglasses ? <Choice label="Sunglasses" value={(plan.quick.sv as any).sunglasses} /> : null}
                   </div>
                 </div>
 
                 <div className="card" style={{ padding: 16 }}>
                   <h3>Progressive</h3>
                   <div className="choices">
-                    {plan.quick.progressive.best ? <Choice label="Best" value={plan.quick.progressive.best} tone="best" /> : null}
-                    {plan.quick.progressive.good ? <Choice label="Good" value={plan.quick.progressive.good} tone="good" /> : null}
+                    {(plan.quick.progressive as any).best ? <Choice label="Best" value={(plan.quick.progressive as any).best} tone="best" /> : null}
+                    {(plan.quick.progressive as any).good ? <Choice label="Good" value={(plan.quick.progressive as any).good} tone="good" /> : null}
                     {(plan.quick.progressive as any).value ? <Choice label="Value" value={(plan.quick.progressive as any).value} /> : null}
-                    {plan.quick.progressive.transitions ? <Choice label="Transitions" value={plan.quick.progressive.transitions} tone="warn" /> : null}
-                    {plan.quick.progressive.sunglasses ? <Choice label="Sunglasses" value={plan.quick.progressive.sunglasses} /> : null}
+                    {(plan.quick.progressive as any).transitions ? <Choice label="Transitions" value={(plan.quick.progressive as any).transitions} tone="warn" /> : null}
+                    {(plan.quick.progressive as any).sunglasses ? <Choice label="Sunglasses" value={(plan.quick.progressive as any).sunglasses} /> : null}
                   </div>
                 </div>
               </div>
